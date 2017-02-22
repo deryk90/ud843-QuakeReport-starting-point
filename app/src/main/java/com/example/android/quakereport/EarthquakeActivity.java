@@ -159,23 +159,6 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderManag
 
         private String url;
 
-/*        @Override
-        protected List<Earthquake> doInBackground(String... url) {
-            if(url.length < 1 || url[0] == null){
-                return null;
-            }
-            List<Earthquake> earthquakes = QueryUtils.fetchEarthquakeData(url[0]);
-            return earthquakes;
-        }
-
-        @Override
-        protected void onPostExecute(List<Earthquake> earthquakes) {
-            super.onPostExecute(earthquakes);
-            if(earthquakes.isEmpty()){
-                return;
-            }
-            updateUI(earthquakes);
-        }*/
 
         @Override
         public List<Earthquake> loadInBackground() {
